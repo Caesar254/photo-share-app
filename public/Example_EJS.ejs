@@ -1,0 +1,25 @@
+// EJS generates HTML with plain javascript
+
+// Variable
+<%= person.name  %>
+
+
+//if statement
+<% if {person} %>
+
+<h1><%= person.name  %></h1>
+
+<% } %>
+
+//for each
+<ul>
+    <% post.forEach(function(post)){ %>
+        <li>
+            <%= post.title  %>
+        </li>
+    <% }); %>
+
+</ul>
+
+// partial - allows for reusable components
+<%- include('partial/navbar') %>
